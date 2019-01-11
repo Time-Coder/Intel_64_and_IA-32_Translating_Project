@@ -1,0 +1,27 @@
+\section{第 1 卷概述：基础架构}
+该手册的内容如下：
+\begin{itemize}
+	\setlength\itemsep{-0.3em}
+	\item \textbf{第 1 章 — 关于这个手册。}概述了所有五卷英特尔 64 和 IA-32 架构软件开发者手册。还描述了这些手册中的符号约定，并列出了程序员和硬件设计人员感兴趣的相关英特尔手册和文档。
+	\item \textbf{第 2 章 — 英特尔 64 和 IA-32 架构。}介绍了 Intel 64 和 IA-32 架构以及基于这些架构的 Intel 处理器系列。还概述了这些处理器中的常见功能以及 Intel 64 和 IA-32 架构的简要历史。
+	\item \textbf{第 3 章 — 基本执行环境。}介绍了内存组织的模型，并描述了供应用程序使用的寄存器集。
+	\item \textbf{第 4 章 — 数据类型。}描述处理器识别的数据类型和寻址模式；概述了实数和浮点格式以及浮点异常。
+	\item \textbf{第 5 章 — 指令集汇总。}列出所有 Intel 64 和 IA-32 指令，并将它们分为不同的技术组。
+	\item \textbf{第 6 章 — 系统调用、中断和异常。}描述了为系统调用、中断和异常提供服务的过程堆栈以及它们的机制。
+	\item \textbf{第 7 章 — 用通用指令编程。}描述对基本数据类型，通用寄存器和段寄存器进行操作的基本加载和存储，程序控制，算术和字符串指令；还描述了在保护模式下执行的系统指令。
+	\item \textbf{第 8 章 — 用 x87 FPU 编程。}描述 x87 浮点单元（FPU），包括浮点寄存器和数据类型；概述了浮点指令集，并描述了处理器的浮点异常条件。
+	\item \textbf{第 9 章 — 用英特尔多媒体扩展指令集 (Multi Media eXtension, MMX) 技术编程。}介绍了英特尔 MMX 技术，包括 MMX 寄存器和数据类型；概述了 MMX 指令集。
+	\item \textbf{第 10 章 — 用英特尔流式 SIMD 扩展 (Streaming SIMD Extensions, SSE) 编程。}描述 SSE 扩展，包括 XMM 寄存器，MXCSR 寄存器和压缩单精度浮点数据类型；概述了 SSE 指令集，并提供了编写访问 SSE 扩展的代码的指南。
+	\item \textbf{第 11 章 — 用 SSE2 编程。}描述 SSE2 扩展，包括 XMM 寄存器和压缩双精度浮点数据类型；概述了 SSE2 指令集，并给出了编写访问 SSE2 扩展的代码的指南。本章还介绍了通过 SSE 和 SSE2 指令可能产生的 SIMD 浮点异常。还给出了将 SSE 和 SSE2 扩展支持合并到操作系统和应用程序代码中的一般准则。
+	\item \textbf{第 12 章 — 用 SSE3、SSSE3、SSE4 以及 AES 新指令 (AESNI) 编程。}概述了 SSE3 指令集，补充 SSE3，SSE4，AESNI 指令以及编写访问这些扩展的代码的指南。
+	\item \textbf{第 13 章 — 用 XSAVE 功能集管理状态。}介绍 XSAVE 功能集，并说明软件如何启用 XSAVE 功能集和启用 XSAVE 的功能。
+	\item \textbf{第 14 章 — 用 AVX, FMA 和 AVX2 编程。}概述了英特尔 AVX 指令集，FMA 和英特尔 AVX2 扩展，并提供了编写访问这些扩展的代码的指南。
+	\item \textbf{第 15 章 — 用英特尔事务性同步扩展 (Transactional Synchronization Extension, TSX) 进行编程。}描述了支持锁定省略技术的指令扩展，以提高具有竞争锁的多线程软件的性能。
+	\item \textbf{第 16 章 — 输入/输出。}描述处理器的 I/O 机制，包括 I/O 端口寻址，I/O 指令和 I/O 保护机制。
+	\item \textbf{第 17 章 — 处理器识别和特征确定。}描述如何确定处理器中可用的 CPU 类型和功能。
+	\item \textbf{附录 A — EFLAGS 交叉参考。}总结了 IA-32 指令如何影响 EFLAGS 寄存器中的标志。
+	\item \textbf{附录 B — EFLAGS 条件代码。}总结条件跳转，移动和“条件代码字节设置”指令如何使用 EFLAGS 寄存器中的条件代码标志 (OF, CF, ZF, SF 和 PF)。
+	\item \textbf{附录 C — 浮点异常汇总。}总结了 x87 FPU 和 SSE/SSE2/SSE3 浮点指令可能引发的异常。
+	\item \textbf{附录 D — 编写 x87 FPU 异常处理程序的指南。}描述如何为 FPU 异常设计和编写 MSDOS * 兼容的异常处理工具（包括软件和硬件要求以及汇编语言代码示例）。还描述了编写健壮的 FPU 异常处理程序的一般技术。
+	\item \textbf{附录 E — 编写 SIMD 浮点异常处理程序的指南。}讲解了如何编写异常处理程序以应对 SSE/SSE2/SSE3 浮点指令生成的异常。
+\end{itemize}

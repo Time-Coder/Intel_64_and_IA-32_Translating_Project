@@ -1,0 +1,116 @@
+\begin{titlepage}
+\begin{flushright}
+\vspace*{-1.5cm}
+\includegraphics[scale=1]{intel_logo.pdf}
+
+\vspace*{2cm}
+
+{\Huge \textbf{\intelblue{英特尔\registered~ 64 和 IA-32 架构}}\\\textbf{\intelblue{软件开发者手册}}}
+
+\vspace{0.5cm}
+{\LARGE \intelblue{\textbf{所包含的卷：}}\\
+\intelblue{\textbf{1, 2A, 2B, 2C, 2D, 3A, 3B, 3C, 3D 和 4}}}
+\end{flushright}
+
+\vspace*{2cm}
+
+\noindent\intelblue{说明：}该文档包含英特尔 64 和 IA-32 架构软件开发者手册的所有的四卷：
+\begin{enumerate}
+	\item 基础架构，卷编号 253665；
+	\item 指令集参考 A-Z，卷编号 325383；
+	\item 系统编程指南，卷编号 325384；
+	\item 专用寄存器，卷编号 335592。
+\end{enumerate}
+在评估您的设计时根据需要参阅这 4 卷。
+
+\vspace{7cm}
+
+\begin{flushright}
+卷编号：325462-067US\\
+2018 年 5 月
+\end{flushright}
+\end{titlepage}
+
+\thispagestyle{empty}
+\vspace*{12cm}
+英特尔技术的特性和优势取决于而且可能需要启用硬件、软件或服务激活。在 \url{www.intel.com} 或 OEM 或零售商处了解更多信息。
+
+任何计算机系统都不能做到绝对安全。英特尔对数据或系统丢失或被盗，或者其他由该类丢失造成的损害不承担任何责任。
+
+对于与此处所述的英特尔产品相关的任何侵权或其他法律分析，您不得使用本文档。您同意授予英特尔对此后起草的任何专利权利要求的非独占，免版税许可，其中包括此处披露的主题。
+
+本文档未授予任何知识产权许可（明示或暗示，反语或其他方式）。
+
+本文档所描述的产品可能包含设计缺陷或错误，即勘误表，可能导致产品偏离已发布的规格。我们可根据您的要求提供目前最新的勘误表。
+
+本文档包含有关开发中的产品，服务和/或流程的信息。 此处提供的所有信息如有更改，恕不另行通知。 请联系您的英特尔代表，以获取最新的英特尔产品规格和路线图。
+
+可通过致电 1800-548-4725 或访问 \url{http://www.intel.com/design/literature.htm} 获取本文档或英特尔文献中提及的其他具有卷编号的文档。
+
+英特尔(Intel)，英特尔徽标，英特尔凌动(Intel Atom)，英特尔酷睿(Intel Core)，英特尔快步(Intel SpeedStep)，多媒体扩展指令集(MMX)，奔腾(Pentium)，VTune 和至强(Xeon)是英特尔集团在美国和/或其他国家/地区的商标。
+
+*其他名称或商标可能是其他人的财务。
+
+版权\copyright 1997-2018，英特尔集团。保留所有版权。
+
+\newpage
+\thispagestyle{empty}
+\begin{flushright}
+\vspace*{-1.5cm}
+\includegraphics[scale=1]{intel_logo.pdf}
+
+\vspace*{2cm}
+
+{\Huge \textbf{\intelblue{英特尔\registered~64 和 IA-32 架构}}\\\textbf{\intelblue{软件开发者手册}}}
+
+\vspace{0.5cm}
+{\LARGE \intelblue{\textbf{卷 1：}}\\
+\intelblue{\textbf{基础架构}}}
+\end{flushright}
+
+\vspace*{2cm}
+
+\noindent\intelblue{说明：}英特尔 64 和 IA-32 架构软件开发者手册包含 10 卷：
+\begin{enumerate}
+	\item 基础架构，卷编号 253665；
+	\item 指令集参考 A-L，卷编号 253666；
+	\item 指令集参考 M-U，卷编号 253667；
+	\item 指令集参考 V-Z，卷编号 326018；
+	\item 指令集参考，卷编号 334569；
+	\item 系统编程指南（第 1 部分），卷编号 253668；
+	\item 系统编程指南（第 2 部分），卷编号 253669；
+	\item 系统编程指南（第 3 部分），卷编号 326019；
+	\item 系统编程指南（第 4 部分），卷编号 332831；
+	\item 专用寄存器，卷编号 335592。
+\end{enumerate}
+在评估您的设计时根据需求参阅这 10 卷。
+
+\vspace{2cm}
+
+\begin{flushright}
+卷编号：253665-067US\\
+2018 年 5 月
+\end{flushright}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{12cm}
+英特尔技术的特性和优势取决于而且可能需要启用硬件、软件或服务激活。在 \url{www.intel.com} 或 OEM 或零售商处了解更多信息。
+
+任何计算机系统都不能做到绝对安全。英特尔对数据或系统丢失或被盗，或者其他由该类丢失造成的损害不承担任何责任。
+
+对于与此处所述的英特尔产品相关的任何侵权或其他法律分析，您不得使用本文档。您同意授予英特尔对此后起草的任何专利权利要求的非独占，免版税许可，其中包括此处披露的主题。
+
+本文档未授予任何知识产权许可（明示或暗示，反语或其他方式）。
+
+本文档所描述的产品可能包含设计缺陷或错误，即勘误表，可能导致产品偏离已发布的规格。我们可根据您的要求提供目前最新的勘误表。
+
+本文档包含有关开发中的产品，服务和/或流程的信息。 此处提供的所有信息如有更改，恕不另行通知。 请联系您的英特尔代表，以获取最新的英特尔产品规格和路线图。
+
+可通过致电 1800-548-4725 或访问 \url{http://www.intel.com/design/literature.htm} 获取本文档或英特尔文献中提及的其他具有卷编号的文档。
+
+英特尔(Intel)，英特尔徽标，英特尔原子(Intel Atom)，英特尔核心(Intel Core)，英特尔快步(Intel SpeedStep)，多媒体扩展指令集(MMX)，奔腾(Pentium)，VTune 和至强(Xeon)是英特尔集团在美国和/或其他国家/地区的商标。
+
+*其他名称或商标可能是其他人的财务。
+
+版权\copyright~1997-2018，英特尔集团。保留所有版权。
